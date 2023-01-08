@@ -7,7 +7,7 @@ async function main(){
   const res_1 = await axios.get("http://example.com/api/")
   var data = res_1.data
   //or
-  const res_2 = fetch("http://example.com/api/")
+  const res_2 = await fetch("http://example.com/api/")
   var data = res_2.json()
 }
 ```
